@@ -1,0 +1,96 @@
+main.page {
+    background: url('../../images/bg-main-desktop.png') center left no-repeat $white;
+    padding: 10rem 2rem;
+    section.left {
+        flex: 0 1 50%;
+        figure.card-image {
+            display: inline-block;
+            position: relative;
+            &.front {
+                img {
+                    margin: 0 0 3rem -2rem;
+                }
+            }
+            &.back {
+                img {
+                    margin: 0 0 0 4rem;
+                }
+            }
+            span {
+                color: $white;
+                font: $weight 15px $font;
+                letter-spacing: 2px;
+                position: absolute;
+                text-transform: uppercase;
+                &.card-logo {
+                    left: 0;
+                    top: 30px;
+                }
+                &.card-number {
+                    bottom: 130px;
+                    font-size: 28px;
+                    left: 0;
+                }
+                &.card-name {
+                    bottom: 80px;
+                    left: 0;
+                }
+                &.card-date {
+                    bottom: 80px;
+                    right: 30px;
+                }
+                &.card-cvc {
+                    right: 60px;
+                    top: 110px;
+                }
+            }
+        }
+    }
+    section.right {
+        flex: 0 1 30%;
+        form.client-data {
+            color: $dark_violet;
+            label {
+                font: $weight 13px $font;
+                letter-spacing: 2px;
+                padding: 0;
+                text-transform: uppercase;
+            }
+            input {
+                border-color: $light_grayish_violet;
+                border-radius: .5rem;
+                color: $dark_violet;
+                font: $weight 18px $font;
+                padding: .75rem 1rem;
+                &.input-half {
+                    width: 45%;
+                }
+                &::placeholder {
+                    color: $light_grayish_violet;
+                }
+                &:focus {
+                    border-color: lighten($dark_violet, 25%);
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+            button.btn-confirm {
+                background: $dark_violet;
+                border: 0 none;
+                color: $white;
+                font: $weight 18px $font;
+                padding: 1rem 2rem;
+                &:hover {
+                    background: lighten($dark_violet, 10%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    main.page {
+        background: url('../../images/bg-main-mobile.png') center left no-repeat $white;
+        padding: 10rem 1rem;
+    }
+}
