@@ -38,6 +38,9 @@ main.page {
                 &.card-date {
                     bottom: 80px;
                     right: 30px;
+                    span.month, span.year {
+                        position: relative;
+                    }
                 }
                 &.card-cvc {
                     right: 60px;
