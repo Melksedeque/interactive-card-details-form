@@ -36,14 +36,7 @@ $(document).ready(function() {
         $(this).val(ccnumspaced.join(' '));
     });
 
-    $('input[name="month"]').on('input', function(e) {
-        $(this).val($(this).val().replace(/[^0-9]/g, ''));
-    });
-    $('input[name="year"]').on('input', function(e) {
-        $(this).val($(this).val().replace(/[^0-9]/g, ''));
-    });
-
-    $('input[name="cvc"]').on('input', function(e) {
+    $('input[name="month"], input[name="year"], input[name="cvc"]').on('input', function(e) {
         $(this).val($(this).val().replace(/[^0-9]/g, ''));
     });
     
@@ -55,51 +48,44 @@ $(document).ready(function() {
         setDefaultClass();
         
         if(!inputName.value) {
-            errorMessageName.removeClass('d-none');
-            errorMessageName.addClass('d-block');
+            errorMessageName.removeClass('d-none').addClass('d-block');
             valid = false;
         }
         
         if(!inputNumber.value) {
-            errorMessageNumber.removeClass('d-none');
-            errorMessageNumber.addClass('d-block');
+            errorMessageNumber.removeClass('d-none').addClass('d-block');
             valid = false;
         } else if (inputNumber.value.length < 19) {
-            errorMessageInvalidNumber.removeClass('d-none');
-            errorMessageInvalidNumber.addClass('d-block');
+            errorMessageInvalidNumber.removeClass('d-none').addClass('d-block');
             valid = false;
         }
         
         if(!inputMonth.value || !inputYear.value) {
-            errorMessageDate.removeClass('d-none');
-            errorMessageDate.addClass('d-block');
-            errorMessageInvalidMonth.removeClass('d-block');
-            errorMessageInvalidMonth.addClass('d-none');
+            errorMessageDate.removeClass('d-none').addClass('d-block');
+            errorMessageInvalidMonth.removeClass('d-block').addClass('d-none');
+            errorMessageInvalidYear.removeClass('d-block').addClass('d-none');
             valid = false;
         } else if (parseInt(inputMonth.value) > 12 || inputMonth.value == 0) {
-            errorMessageInvalidMonth.removeClass('d-none');
-            errorMessageInvalidMonth.addClass('d-block');
+            errorMessageInvalidMonth.removeClass('d-none').addClass('d-block');
+            valid = false;
         } else if (parseInt(inputYear.value) < parseInt(date.getFullYear().toString().substring(2,4))) {
-            errorMessageInvalidYear.removeClass('d-none');
-            errorMessageInvalidYear.addClass('d-block');
+            errorMessageInvalidYear.removeClass('d-none').addClass('d-block');
+            valid = false;
         }
         
         if(!inputCvc.value) {
-            errorMessageCvc.removeClass('d-none');
-            errorMessageCvc.addClass('d-block');
+            errorMessageCvc.removeClass('d-none').addClass('d-block');
             valid = false;
         } else if (inputCvc.value.length < 3) {
-            errorMessageInvalidCvc.removeClass('d-none');
-            errorMessageInvalidCvc.addClass('d-block');
+            errorMessageInvalidCvc.removeClass('d-none').addClass('d-block');
             valid = false;
         }
 
         if(valid === true) {
-            $('form.client-data').hide();
-            $('div.success').show();
+            $('form.client-data').slideToggle('fast');
+            $('div.success').slideToggle('fast');
         }
         
         return valid;
     }
-
 });
