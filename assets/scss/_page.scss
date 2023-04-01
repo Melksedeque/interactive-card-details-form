@@ -77,6 +77,12 @@ main.page {
                     outline: none;
                 }
             }
+            span.message {
+                color: $red;
+                font: $weight 12px $font;
+                margin-top: 7px;
+                padding: 0;
+            }
             button.btn-confirm {
                 background: $dark_violet;
                 border: 0 none;
