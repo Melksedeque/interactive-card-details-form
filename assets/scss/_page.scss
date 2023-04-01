@@ -71,6 +71,9 @@ main.page {
                 &::placeholder {
                     color: $light_grayish_violet;
                 }
+                &:hover {
+                    border-color: lighten($dark_violet, 60%);
+                }
                 &:focus {
                     border-color: lighten($dark_violet, 25%);
                     box-shadow: none;
