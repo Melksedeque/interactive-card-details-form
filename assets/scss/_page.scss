@@ -102,7 +102,64 @@ main.page {
 
 @media screen and (max-width: $mobile) {
     main.page {
-        background: url('../../images/bg-main-mobile.png') center left no-repeat $white;
-        padding: 10rem 1rem;
+        background: url('../../images/bg-main-mobile.png') center top no-repeat $white;
+        padding: 3rem .75rem;
+        section.left, section.right {
+            flex: 1 1 100%;
+        }
+        section.left {
+            display: flex;
+            flex-flow: row wrap;
+            figure.card-image {
+                display: inline-block;
+                position: relative;
+                span {
+                    font-size: 10px;
+                }
+                &.front {
+                    margin-top: -70px;
+                    order: 2;
+                    img {
+                        margin: 0 0 0 0;
+                        max-width: 85%;
+                    }
+                    span.card-logo {
+                        top: 10px;
+                        left: 7px;
+                        svg {
+                            transform: scale(.7);
+                        }
+                    }
+                    span.card-number {
+                        bottom: 45px;
+                        font-size: 18px;
+                        left: 20px;
+                    }
+                    span.card-name {
+                        bottom: 20px;
+                        left: 20px;
+                    }
+                    span.card-date {
+                        bottom: 20px;
+                        right: 65px;
+                    }
+                }
+                &.back {
+                    order: 1;
+                    text-align: right;
+                    img {
+                        margin: 0 0 0 0;
+                        max-width: 85%;
+                    }
+                    span.card-cvc {
+                        right: 35px;
+                        top: 68px;
+                    }
+                }
+            }
+        }
+        section.right {
+            margin-top: 50px;
+        }
     }
 }
