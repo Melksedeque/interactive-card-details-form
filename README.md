@@ -33,15 +33,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./screenshot-mobile.jpg)
+![](./screenshot-mobile-success.jpg)
+![](./screenshot-desktop.jpg)
+![](./screenshot-desktop-success.jpg)
 
 ### Links
 
@@ -56,12 +51,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - [Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)Flexbox
 - CSS Grid
+- Sass / SCSS
 - Mobile-first workflow
+- jQuery 3.6.4
 - [Bootstrap](https://getbootstrap.com/) - Bootstrap 5.2.3
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+With this project I learned how to create validations to forms through JavaScript instead of use the HTML property "required".
 
 To see how you can add code snippets, see below:
 
