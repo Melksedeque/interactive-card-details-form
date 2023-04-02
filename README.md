@@ -40,7 +40,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Link](https://melksedeque.github.io/interactive-card-details-form/){:target="_blank"}
+- Live Site URL: [Link](https://melksedeque.github.io/interactive-card-details-form/)
 
 ## My process
 
