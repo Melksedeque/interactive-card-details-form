@@ -31,9 +31,9 @@ $(document).ready(function() {
 
     $('input[name="number"]').on('input', function(e) {
         $(this).val($(this).val().replace(/[^0-9]/g, ''));
-        let ccnum = $(this).val();
-        let ccnumspaced = ccnum.match(/.{1,4}/g);
-        $(this).val(ccnumspaced.join(' '));
+        let num = $(this).val();
+        let numSpaced = num.match(/.{1,4}/g);
+        $(this).val(numSpaced.join(' '));
     });
 
     $('input[name="month"], input[name="year"], input[name="cvc"]').on('input', function(e) {
