@@ -11,6 +11,9 @@ main.page {
     }
     section.left {
         flex: 0 1 50%;
+        h2 {
+            color: $light_grayish_violet;
+        }
         figure.card-image {
             display: inline-block;
             position: relative;
