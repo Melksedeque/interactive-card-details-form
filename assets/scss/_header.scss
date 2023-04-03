@@ -15,3 +15,19 @@ header.title {
         padding: 50px;
     }
 }
+
+@media screen and (max-width: $mobile) {
+    header.title {
+        background: $light_grayish_violet;
+        padding: 20px;
+        h1, h3 {
+            font-size: 20px;
+            padding: 0;
+            position: static;
+            text-align: center;
+        }
+        h3 {
+            font-size: 12px;
+        }
+    }
+}
