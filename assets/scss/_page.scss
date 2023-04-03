@@ -1,6 +1,14 @@
 main.page {
     background: url('../../images/bg-main-desktop.png') center left no-repeat $white;
     padding: 10rem 2rem;
+    section.left, section.right {
+        h2 {
+            color: $dark_violet;
+            font: $weight 25px $font;
+            margin: 0 0 20px;
+            padding: 0;
+        }
+    }
     section.left {
         flex: 0 1 50%;
         figure.card-image {
