@@ -114,10 +114,16 @@ main.page {
         padding: 3rem .75rem;
         section.left, section.right {
             flex: 1 1 100%;
+            h2 {
+                text-align: right;
+            }
         }
         section.left {
             display: flex;
             flex-flow: row wrap;
+            h2 {
+                color: $light_grayish_violet;
+            }
             figure.card-image {
                 display: inline-block;
                 position: relative;
