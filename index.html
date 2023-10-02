@@ -15,7 +15,6 @@
   
   <title>Frontend Mentor | Interactive card details form</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -30,19 +29,21 @@
     <div class="container d-flex flex-row flex-wrap justify-content-center align-items-center">
       <section class="left cards">
         <h2 class="d-none">Cards displayed</h2>
-        <figure class="card-image front">
-          <img src="images/bg-card-front.png" alt="Front Card">
-          <span class="card-logo">
-            <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
-          </span>
-          <span class="card-number">0000 0000 0000 0000</span>
-          <span class="card-name">Jane Appleseed</span>
-          <span class="card-date"><span class="month">00</span>/<span class="year">00</span></span>
-        </figure>
-        <figure class="card-image back">
-          <img src="images/bg-card-back.png" alt="Back Card">
-          <span class="card-cvc">000</span>
-        </figure>
+        <div class="figures">
+          <figure class="card-image front">
+            <img src="images/bg-card-front.png" alt="Front Card">
+            <span class="card-logo">
+              <svg width="84" height="47" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
+            </span>
+            <span class="card-number">0000 0000 0000 0000</span>
+            <span class="card-name">Jane Appleseed</span>
+            <span class="card-date"><span class="month">00</span>/<span class="year">00</span></span>
+          </figure>
+          <figure class="card-image back">
+            <img src="images/bg-card-back.png" alt="Back Card">
+            <span class="card-cvc">000</span>
+          </figure>
+        </div>
       </section>
       <section class="right form">
         <h2 class="d-none">User data form</h2>
